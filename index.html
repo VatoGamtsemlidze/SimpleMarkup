@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>EcomHelper</title>
+</head>
+<body>
+    <nav class="topbar">
+        <div>
+            <label class="logo">ecom<span>Helper.</span></label>
+            <ul class="nav-list">
+                <li>Home</li>
+                <li>Advantages</li>
+                <li>Handling</li>
+                <li>Prices</li>
+                <li>FAQ</li>
+                <li class="burger-close-btn"><i class="fas fa-times"></i></li>
+            </ul>
+        </div>
+        <button>Contact us</button>
+        <label class="checkbtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+    </nav>
+    <div class="virtual-assistants">
+        <div class="apitment">
+                <div>
+                    <p>from € 3.50 per hour</p>
+                    <h1>Virtual assistants for entrepreneurs</h2>
+                    <span>We only recruit in countries with a low cost of living. Our head office is in </span>
+                </div>
+            <button>Make a apitment</button>
+        </div>
+        <div class="steps">
+            <ul>
+                <li class="step1">
+                    <h3>Step 1</h3>
+                    <p>We will discuss the requirements in a free initial consultation.</p>
+                </li>
+                <li class="step2">
+                    <h3>step 2</h3>
+                    <p>After a week we will suggest profiles to you.</p>
+                </li>
+                <li class="step3">
+                    <h3>step 3</h3>
+                    <p>You conduct remote interviews with the candidates.</p>
+                </li>
+                <li class="step4">
+                    <h3>step 4</h3>
+                    <p>Your ideal candidate will start working for you.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="labor-cost">
+        <div class="general-price">
+            <header>Labor cost arbitrage calculator</header>
+            <div>
+                <ul class="sliders">
+                    <li>
+                        <p>Working hours per month</p>
+                        <input type="range" min="1" max="100" value="93" class="slider" id="myRange" />
+                        <p>194H</p>
+                    </li>
+                    <li>
+                        <p>Hourly wage in germany</p>
+                        <input type="range" min="1" max="100" value="17" class="slider" id="myRange" />
+                        <p>2.5€</p>
+                    </li>
+                    <li>
+                        <p>Hourly wage in georgia</p>
+                        <input type="range" min="1" max="100" value="43" class="slider" id="myRange" />
+                        <p>3.5€</p>
+                    </li>
+                </ul>
+                <ul class="general-price-description">
+                    <li>
+                        <p>Monthly salary in Germany <span>3579.82 €</span></p>
+                        <p>The costs include 20.94% incidental wage costs for the employer (health insurance, long-term care insurance, pension insurance, unemployment insurance, insolvency payments and statutory accident insurance)</p>
+                    </li>
+                    <li>
+                        <p>Monthly salary in Georgia <span>571,20 € </span></p>
+                        <p>The costs include 2% incidental wage costs for the statutory pension scheme.</p>
+                    </li>
+                    <li>
+                        <p>My talent cost <span>289€</span></p>
+                        <p>The monthly costs for MyTalent do not apply if the employee is taken over, which is possible at any time for a one-off payment.</p>
+                    </li>
+                    <li>
+                        <p>Your arbitrage profit <span>571,20 € </span></p>
+                        <p>* Difference between wage costs in Germany and Georgia minus the costs for MyTalent.
+                            Further advantages: No recruiting costs, no separation costs, no payroll accounting and no works council.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="specific-price">
+            <ul>
+                <li>
+                    <div>
+                        <h3>Up to 10 hours / month</h3>
+                        <p>Plus labor costs (€ 3.50 - € 5.50 / hour)</p>
+                    </div>
+                    <h1>€ 29</h1>
+                </li>
+                <li>
+                    <div>
+                        <h3>Up to 40 hours / month</h3>
+                        <p>Plus labor costs (€ 3.50 - € 5.50 / hour)</p>
+                    </div>
+                    <h1>€ 89</h1>
+                </li>
+                <li>
+                    <div>
+                        <h3>Full time employee</h3>
+                        <p>Plus labor costs (€ 3.50 - € 5.50 / hour)</p>
+                    </div>
+                    <h1>€ 279</h1>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
