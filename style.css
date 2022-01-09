@@ -13,7 +13,7 @@
     font-family: Poppins;
 }
 body{
-    padding: 50px 82px;
+    padding: 50px 82px 35px 82px;
 }
 .topbar{
     width: 100%;
@@ -83,7 +83,7 @@ label.logo span{
     }
     .nav-list{
         position: fixed;
-        right: -120%;
+        right: -100%;
         width: 320px;
         background: #4390ee;
         color: white;
@@ -176,11 +176,12 @@ label.logo span{
     opacity: 60%;
     font-weight: 400;
 }
-.apitment button{
+.apitment button, .general-features-desc button, footer button{
     border: none;
     background: var(--black);
     color: white;
     font-size: 14px;
+    font-weight: 700;
     max-width: 182px;
     padding: 10px 29px 10px 30px;
     margin-left: 50px;
@@ -189,6 +190,7 @@ label.logo span{
 .labor-cost{
     margin-top: 150px;
     display: grid;
+    grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
 }
 .specific-price ul{
@@ -229,7 +231,7 @@ label.logo span{
     display: flex;
     align-items: center;
 }
-.general-price header{
+.general-price header, .faq header{
     padding: 21px 30px;
     background-color: var(--blue);
     color: white;
@@ -286,6 +288,7 @@ label.logo span{
     padding-left: 20px;
 }
 .general-price-description li p:first-child span{
+    color: var(--black);
     margin-left: 30px;
     font-weight: 700;
 }
@@ -297,6 +300,350 @@ label.logo span{
 .general-price-description li:nth-child(n+2){
     margin-top: 30px;
 }
+.platforms{
+    margin-top: 154px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.platforms-pic{
+    display: flex;
+    justify-content: flex-end;
+}
+.platforms-pic img{
+    max-width: 354.63px;
+}
+.platforms-pic div{
+    width: 414.47px;
+    height: 627.54px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.platforms-desc div:first-child p:first-child{
+    color: var(--black);
+    opacity: 60%;
+}
+.platforms-desc div h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 19.97px 0 30px 0px;
+    color: var(--black);
+}
+.platforms-desc div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.platforms-icons{
+    margin-top: 49.99px;
+}
+.platforms-icons li {
+    display: flex;
+}
+.platforms-icons li div {
+    width: 60%;
+}
+.platforms-icons li{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.platforms-icons li p{
+    font-weight: 700;
+    font-size: 14px;
+}
+.platforms-icons li div img{
+    max-width: 100%;
+    max-height: 1.98vh;
+}
+.assistant-features{
+    margin-top: 160.32px;
+    padding: 30px 0 51px 0;
+}
+.features-list{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;
+}
+.features-list li h3 {
+    font-size: 18px;
+    color: var(--black);
+}
+.features-list li p {
+    margin-top: 10px;
+    max-width: 284px;
+    max-height: 42px;
+    font-size: 14px;
+}
+.advantages{
+    margin-top: 150px;
+}
+.section-title h2{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: var(--black);
+}
+.section-title p{
+    font-size: 18px;
+}
+.section-title span{
+    color: var(--blue);
+}
+.advantages ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 60px;
+}
+.advantages ul li {
+    display: flex;
+}
+.advantages ul li div:nth-child(n+2){
+    margin-left: 16.54px;
+}
+.advantages ul li h3 {
+    color: var(--black);
+}
+.advantages ul li p {
+    font-size: 14px;
+    max-width: 465px;
+    margin-top: 10px;
+}
+.custom-border-left{
+    background-color: var(--blue);
+    height: 91px;
+    margin-top: 7px;
+    width: 8px;
+}
+.general-features{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 409px 1fr;
+}
+.general-features .features-img{
+    max-width: 284px;
+    height: 430px;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+.general-features img {
+    max-width: 243px;
+}
+.general-features-desc{
+    display: grid;
+    grid-template-columns: 306px 1fr;
+}
+.general-features-desc ul li{
+    margin-bottom: 30px;
+    max-width: 207px;
+    opacity: 60%;
+    /* border-left: 4px solid var(--orange); */
+}
+.general-features-desc ul li p {
+    margin-left: 20px;
+    font-size: 18px;
+}
+.general-features-desc ul li.active{
+    opacity: 100%;
+    border-left: 4px solid var(--orange);
+}
+.general-features-desc div div{
+    display: flex;
+}
+.general-features-desc div h1{
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+.general-features-desc div p {
+    font-size: 14px;
+    max-width: 500px;
+    color: var(--black);
+}
+.general-features-desc div div {
+    margin-top: 50px;
+}
+.general-features-desc div div button {
+    margin: 0;
+}
+.general-features-desc div div button:nth-child(n+2){
+    margin-left: 22px;
+}
+.faqNexperience{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-column-gap: 124px; */
+}
+.experience-videos{
+    margin-left: 124px;
+}
+.experience-videos ul {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.experience-videos ul li img{
+    max-width: 100%;
+}
+.experience-videos ul li div{
+    margin-top: 8px;
+    color: var(--black);
+
+}
+.experience-videos ul li div span{
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 400;
+}
+.experience-videos ul li div p {
+    margin-top: 9px;
+    font-size: 14px;
+}
+.faq ul li:first-child {
+    margin-top: 50px;
+}
+.faq ul li {
+    color: var(--black);
+    margin-top: 20px;
+    max-width: 590px;
+}
+.faq ul li p:nth-child(n+2){
+    margin: 30px 0px;
+    font-size: 14px;
+}
+.faq ul li div p {
+    font-size: 18px;
+}
+.faq ul li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq ul li div img {
+    max-width: 20px;
+}
+.experience-mytalent {
+    margin-top: 150px;
+}
+.experience-mytalent ul li{
+    background-color: var(--blue);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    max-width: 488px;
+    height: 275px;
+}
+.experience-mytalent ul li p{
+    font-size: 14px;
+    font-weight: 400;
+} 
+.experience-mytalent ul li div:nth-child(n+2){
+    display: flex;
+    margin-top: 23px;
+}
+.experience-mytalent ul li div:nth-child(n+2) p{
+    margin-left: 25px;
+    max-width: 284px;
+}
+.experience-mytalent ul li div div {
+    width: 71px;
+    display: flex;
+    align-items: center;
+}
+.experience-mytalent ul li div div img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+.experience-mytalent ul {
+    display: grid;
+    grid-template-columns: 488px 488px 488px 488px;
+    grid-column-gap: 22px;
+    overflow-x: auto;
+    cursor: grab;
+}
+.experience-mytalent ul::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+footer{
+    margin-top: 80px;
+    padding: 43px 0 35px 0px;
+}
+footer .title{
+    margin-bottom: 34.04px;
+}
+footer .title span:first-child{
+    font-weight: 100;
+}
+footer .title span:nth-child(n+2){
+    color: var(--blue);
+}
+footer .main-cont{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 12vw 60vw 1fr;
+    grid-template-areas: 'contact list apitmentBtn';
+}
+footer .main-cont .contact-list{
+    grid-area: contact;
+}
+footer .main-cont .footer-list{
+    grid-area: list;
+}
+.footer-apitment {
+    grid-area: apitmentBtn;
+}
+.footer-list{
+    display: grid;
+    grid-template-areas: 'home application netWage forCustomers';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-list ul {
+    color: #646566;
+    margin-left: 35px;
+}
+.footer-list ul:first-child li {
+    margin-left: 110px;
+}
+.footer-list ul:nth-child(1){
+    grid-area: home;
+}
+.footer-list ul:nth-child(2){
+    grid-area: application;
+}
+.footer-list ul:nth-child(3){
+    grid-area: netWage;
+}
+.footer-list ul:nth-child(4){
+    grid-area: forCustomers;
+}
+.footer-list ul li:not(:first-child){
+    margin-top: 20px;
+}
+footer .contact-list {
+    padding-right: 20px;
+    max-width: 181px;
+}
+footer .contact-list li:nth-child(2){
+    margin: 20px 0px;
+    color: var(--blue);    
+}
+.copyright p{
+    font-size: 14px;
+    opacity: 60%;
+}
+.phone-numbers{
+    width: 200%;
+}   
 @media (max-width: 960px){
     .virtual-assistants{
         margin: 0;
@@ -322,10 +669,176 @@ label.logo span{
     }
     .labor-cost{
         grid-template-columns: 1fr;
+        margin-top: 80px;
+    }
+    .advantages ul{
+        grid-column-gap: 20px;
     }
     .specific-price ul{
         margin-top: 80px;
         align-items: center;
+    }
+    .general-price header{
+        max-width: 100%;
+    }
+    .platforms{
+        margin-top: 80px;
+        grid-template-columns: 1fr;
+    }
+    .platforms-pic{
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .general-features {
+        grid-template-columns: 1fr;
+    }
+    .features-img{
+        display: none !important;
+    }
+    .faqNexperience{
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+    }
+    .faq{
+        margin: auto;
+    }
+    .experience-videos{
+        margin: 80px auto 0 auto;
+    }
+    .footer-list{
+        margin-top: 10px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-column-gap: 30px;
+        grid-template-areas: 'application netWage forCustomers';
+    }
+    .footer-list ul{
+        margin: 0;
+    }
+    .footer-apitment button{
+        margin: 20px 0;
+    }
+    footer .footer-list ul:first-child{
+        display: none;
+    }
+    footer .main-cont{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'contact'
+        'apitmentBtn'
+        'list'
+        ;
+    }
+    footer .contact-list{
+        max-width: 100%;
+    }
+    .phone-numbers{
+        width: 100%;
+    }
+}
+@media (max-width: 720px){
+    .platforms-pic{
+        display: none;
+    }
+    .assistant-features{
+        margin-top: 80px;
+    }
+    .assistant-features .features-list{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+    }
+    .advantages{
+        margin-top: 80px;
+    }
+}
+@media (max-width: 660px) {
+    .general-features-desc ul li p{
+        margin-left: 6px;
+        font-size: 14px;
+    }
+    .general-features-desc ul {
+        max-width: 180px;
+    }
+    .general-features-desc{
+        grid-template-columns: 202px 178px;
+    }
+    .general-features-desc div h1 {
+        font-size: 32px;
+    }
+    .general-features-desc div div{
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .general-features-desc div div button{
+        font-size: 13px;
+        width: 100%;
+    }
+    .general-features-desc div div button:nth-child(n+2){
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px){
+    .advantages ul{
+        grid-template-columns: 1fr;
+    }
+    .general-price-description li p:first-child span{
+        text-align: right;
+    }
+    .specific-price ul li p{
+        max-width: 159px;
+    }
+    .platforms-desc div h2 {
+        margin: 19.97px 0 20px;
+    }
+    .platforms-icons{
+        margin-top: 30px;
+    }
+    .section-title h2 {
+        margin-bottom: 30px;
+    }
+    .features-list{
+        margin-top: 0;
+    }
+    .advantages ul li h3 {
+        font-size: 18px;
+    }
+    .advantages ul {
+        grid-row-gap: 30px;
+    }
+    .general-features {
+        margin-top: 80px;
+    }
+    .faq ul li:first-child {
+        margin-top: 30px;
+    }
+    .faq ul li p:nth-child(n+2) {
+        margin: 20px 0;
+    }
+    .experience-mytalent {
+        margin-top: 80px;
+    }
+    .experience-mytalent ul li {
+        max-width: 380px;
+        height: 253px;
+    }
+    .experience-mytalent ul li div div {
+        width: 100%;
+    }
+    #experience-carousel {
+        grid-template-columns: 380px 380px 380px 380px;
+        grid-column-gap: 6px;
+    }
+    footer .title{
+        margin-bottom: 15px;
+    }
+    .footer-list{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 'application netWage';
+    }
+    .footer-list ul:nth-child(4){
+        grid-column-start: 2;
+        margin-top: -20px;
     }
 }
 @media (max-width: 430px){
@@ -340,6 +853,12 @@ label.logo span{
     }
     .specific-price ul li{
         width: 380px;
+    }
+    .copyright{
+        padding-bottom: 176px;
+    }
+    .faq ul li div img {
+        max-width: 15px;
     }
 }
 @media (max-width: 320px){
