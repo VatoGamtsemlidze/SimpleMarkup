@@ -250,6 +250,12 @@ label.logo span{
 .sliders li p {
     font-size: 14px;
 }
+.sliders li p::after{
+    content: 'H'
+}
+.sliders li:not(:first-child) p:not(:first-child)::after{
+    content: '€'
+}
 .slider{
   appearance: none;
   width: 242px;
@@ -443,7 +449,8 @@ label.logo span{
     margin-bottom: 30px;
     max-width: 207px;
     opacity: 60%;
-    /* border-left: 4px solid var(--orange); */
+    cursor: pointer;
+    transition: 200ms;
 }
 .general-features-desc ul li p {
     margin-left: 20px;
@@ -530,6 +537,7 @@ label.logo span{
 }
 .faq ul li div img {
     max-width: 20px;
+    cursor: pointer;
 }
 .experience-mytalent {
     margin-top: 150px;
@@ -643,7 +651,7 @@ footer .contact-list li:nth-child(2){
 }
 .phone-numbers{
     width: 200%;
-}   
+}
 @media (max-width: 960px){
     .virtual-assistants{
         margin: 0;
