@@ -85,7 +85,7 @@ label.logo span{
         position: fixed;
         right: -100%;
         width: 320px;
-        background: #4390ee;
+        background: var(--blue);
         color: white;
         flex-direction: column;
         margin: 0;
@@ -346,6 +346,7 @@ label.logo span{
 }
 .platforms-icons li {
     display: flex;
+    color: var(--black);
 }
 .platforms-icons li div {
     width: 60%;
@@ -487,16 +488,24 @@ label.logo span{
     margin-top: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-column-gap: 124px; */
 }
 .experience-videos{
     margin-left: 124px;
 }
+.experience-videos span{
+    max-width: 380px;
+}
 .experience-videos ul {
     display: grid;
-    grid-template-columns: 180px 180px;
+    grid-template-columns: 180px 180px 180px 180px;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
+    overflow-x: auto;
+    max-width: 400px;
+}
+.experience-videos ul::-webkit-scrollbar {
+    width: 0;
+    background: transparent; 
 }
 .experience-videos ul li img{
     max-width: 100%;
@@ -579,8 +588,8 @@ label.logo span{
     cursor: grab;
 }
 .experience-mytalent ul::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0;
+    background: transparent; 
 }
 footer{
     margin-top: 80px;
@@ -742,13 +751,13 @@ footer .contact-list li:nth-child(2){
     .phone-numbers{
         width: 100%;
     }
+    .assistant-features{
+        margin-top: 80px;
+    }
 }
 @media (max-width: 720px){
     .platforms-pic{
         display: none;
-    }
-    .assistant-features{
-        margin-top: 80px;
     }
     .assistant-features .features-list{
         grid-template-columns: 1fr 1fr;
@@ -848,6 +857,9 @@ footer .contact-list li:nth-child(2){
         grid-column-start: 2;
         margin-top: -20px;
     }
+    .experience-videos ul {
+        max-width: 380px;
+    }
 }
 @media (max-width: 430px){
     .general-price header, .general-price ul{
@@ -867,6 +879,12 @@ footer .contact-list li:nth-child(2){
     }
     .faq ul li div img {
         max-width: 15px;
+    }
+    .faq{
+        padding-right: 20px;
+    }
+    .experience-videos span{
+        max-width: 100%;
     }
 }
 @media (max-width: 320px){
